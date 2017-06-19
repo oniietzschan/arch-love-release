@@ -1,7 +1,7 @@
 FROM base/archlinux:latest
 
 RUN pacman -Syy && \
-  # Install love-relase
+  # Install love-release
   yes | pacman -S \
     gcc \
     git \
