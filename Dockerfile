@@ -10,6 +10,8 @@ RUN pacman -Syy && \
   luarocks-5.1 install --server=http://luarocks.org/dev lua-zip && \
   luarocks-5.1 install love-release && \
   luarocks-5.1 install loverocks && \
+  # Install busted
+  luarocks-5.1 install busted && \
   # Install additional Lua libraries
   luarocks-5.1 install bump && \
   luarocks-5.1 install bump-3dpd && \
