@@ -7,7 +7,7 @@ RUN pacman -Syy && \
     git \
     libzip \
     luarocks5.1 && \
-  luarocks-5.1 install --server=http://luarocks.org/dev lua-libzip && \
+  luarocks-5.1 install lua-libzip && \
   luarocks-5.1 install --server=http://luarocks.org/dev love-release scm && \
   luarocks-5.1 install loverocks && \
   # Install busted
