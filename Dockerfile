@@ -16,6 +16,6 @@ RUN pacman -Syy && \
   mkdir ~/bin && \
   curl https://dl.itch.ovh/butler/linux-amd64/head/butler --output ~/bin/butler && \
   chmod 755 ~/bin/butler && \
-  butler upgrade
+  ~/bin/butler upgrade
 
 ENV PATH="$PATH:~/bin"
