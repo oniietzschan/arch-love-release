@@ -15,6 +15,7 @@ RUN pacman -Syy && \
   # Install itch.io butler
   mkdir ~/bin && \
   curl https://dl.itch.ovh/butler/linux-amd64/head/butler --output ~/bin/butler && \
-  chmod 755 ~/bin/butler
+  chmod 755 ~/bin/butler && \
+  butler upgrade
 
 ENV PATH="$PATH:~/bin"
