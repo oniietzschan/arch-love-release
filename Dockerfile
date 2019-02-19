@@ -6,6 +6,7 @@ RUN pacman -Syy && \
     gcc \
     git \
     libzip \
+    luajit \
     luarocks5.1 && \
   luarocks-5.1 install lua-libzip && \
   luarocks-5.1 install love-release && \
